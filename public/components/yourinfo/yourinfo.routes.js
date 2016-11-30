@@ -1,4 +1,4 @@
-export default function routes($stateProvider) {
+export default function routing ($stateProvider) {
   'ngInject';
   $stateProvider
     .state('YourInfo', {
