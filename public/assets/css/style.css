@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 header {
   position: fixed;
   width: 100%;
@@ -5,6 +7,7 @@ header {
   background: #fff;
   top: 0;
   height:123px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header .logo {
@@ -19,5 +22,27 @@ header .logo .img-responsive {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin-top: 123px;
+}
+
+.navbar {
+  background: #003087;
+}
+
+.nav.navbar-nav.navbar-right li a {
+  color:#748bbb;
+}
+
+.nav.navbar-nav.navbar-right .navbar-visted {
+  color:white;
+}
+
+.nav.navbar-nav.navbar-right .navbar-current {
+  text-decoration: underline;
+}
+
+.nav.navbar-nav.navbar-right .navbar-disabled {
+  pointer-events: none;
+  cursor: default;
 }

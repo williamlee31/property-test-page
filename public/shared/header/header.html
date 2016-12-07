@@ -1,27 +1,24 @@
 <div ng-controller="HeaderController as header">
   <header>
-
     <div class="logo-main-wrap clearfix">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-xs-6 logo">
-            <img id="FFQHome_Header_Logo" src="https://esales.farmers.com/assets/img/farmers-logo.svg" name="logo" alt="logo" class="img-responsive">
+            <img src="https://esales.farmers.com/assets/img/farmers-logo.svg" class="img-responsive">
           </div>
         </div>
       </div>
     </div>
 
     <nav class="navbar navbar-default">
-      <div class="navigation">
-        <div class="container">
-          <div class="row">
-            <div class="navbar-header visible-xs col-sm12">
-              
-            </div>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a ng-href="#" ng-class="{ 'navbar-visted': header.navbarIndex.yourInfo, 'navbar-current': header.currentIndex.yourInfo, 'navbar-disabled': !header.navbarIndex.yourInfo }">YOUR INFO</a></li>
+          <li><a href="#/property" ng-class="{ 'navbar-visted': header.navbarIndex.property, 'navbar-current': header.currentIndex.property, 'navbar-disabled': !header.navbarIndex.property }">PROPERTY</a></li>
+          <li><a href="#" ng-class="{ 'navbar-visted': header.navbarIndex.discounts, 'navbar-current': header.currentIndex.discounts, 'navbar-disabled': !header.navbarIndex.discounts }">DISCOUNTS</a></li>
+          <li><a href="#" ng-class="{ 'navbar-visted': header.navbarIndex.quote, 'navbar-current': header.currentIndex.quote, 'navbar-disabled': !header.navbarIndex.quote }">QUOTE</a></li>
+        </ul>
       </div>
-
     </nav>
   </header>
 

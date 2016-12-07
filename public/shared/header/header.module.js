@@ -7,4 +7,9 @@ import HeaderController from './header.controller';
 export default angular.module('header', [uiRouter])
   .config(routing)
   .controller('HeaderController', HeaderController)
+  .directive('aDisabled', function() {
+    return {
+      
+    }
+  })
   .name;

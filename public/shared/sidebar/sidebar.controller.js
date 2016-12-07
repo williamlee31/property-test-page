@@ -1,9 +1,11 @@
 export default class SidebarController {
-  constructor() {
-    this.name = 'Seventh';
+  constructor(InformationService) {
+    'ngInject';
+    this.InformationService = InformationService;
+    this.name = this.InformationService.currentCustomer.name;
   }
 
   changeName() {
-    this.name = 'Eighth';
+    this.name = 'Fourth';
   }
 }

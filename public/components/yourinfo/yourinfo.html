@@ -1,5 +1,16 @@
-<div class="jumbotron">
-  <h1>Hello, {{yourinfo.name}}</h1>
+<div ng-include="'header.html'"></div>
+
+<div class="col-md-8">
+  <div class="jumbotron">
+    <h1>{{yourinfo.customer.name}}</h1>
+  </div>
+
+  <form ng-submit="yourinfo.saveInfo()">
+    <input type="text" placeholder="Name" ng-model="yourinfo.customer.name">
+    <button type="submit" class="btn btn-primary btn-md" ng-click="yourinfo.saveInfo()">Start Quote</button>
+  </form>
 </div>
 
-<button class="btn btn-primary" ng-click="yourinfo.changeName()">Change</button>
+<div class="col-md-4">
+  <div data-ng-include="'sidebar.html'"></div>
+</div>

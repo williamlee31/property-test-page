@@ -1,9 +1,16 @@
 export default class PropertyInfoController {
-  constructor() {
-    this.name = 'First';
+  constructor(InformationService, NavigationService) {
+    'ngInject';
+    this.InformationService = InformationService;
+    this.NavigationService = NavigationService;
+
+    this.name = this.InformationService.currentCustomer.name;
+
+    this.NavigationService.navbarIndex.property = true;
+    this.NavigationService.setCurrentIndex(1);
   }
 
   changeName() {
-    this.name = 'Second';
+    this.name = 'Fourth';
   }
 }
