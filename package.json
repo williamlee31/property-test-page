@@ -19,6 +19,7 @@
   "homepage": "https://github.com/williamlee31/propertyTestPage#readme",
   "dependencies": {
     "angular": "^1.5.9",
+    "angular-animate": "^1.5.9",
     "angular-ui-router": "^0.3.2",
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",

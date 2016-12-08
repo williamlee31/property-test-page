@@ -7,8 +7,4 @@ export default class HeaderController {
     this.currentIndex = this.NavigationService.currentIndex;
     console.log(this.navbarIndex);
   }
-
-  changeName() {
-    this.name = 'Sixth';
-  }
 }

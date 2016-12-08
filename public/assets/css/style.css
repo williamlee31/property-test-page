@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 header {
   position: fixed;
@@ -24,6 +25,12 @@ header .logo .img-responsive {
 body {
   font-family: 'Montserrat', sans-serif;
   margin-top: 123px;
+}
+
+.content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar {
