@@ -1,8 +1,8 @@
 <div ng-include="'header.html'"></div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 clearfix">
+<div class="container fullcontainer">
+  <div class="row rowconatiner">
+    <div class="col-md-8 clearfix" id="leftContent">
       <div class="jumbotron">
         <h1>{{yourinfo.customer.name}}</h1>
       </div>
@@ -25,7 +25,7 @@
       </form>
     </div>
 
-    <div class="col-md-4 visible-md visible-lg">
+    <div class="col-md-4 visible-md visible-lg" id="rightContent">
       <div data-ng-include="'sidebar.html'"></div>
     </div>
   </div>

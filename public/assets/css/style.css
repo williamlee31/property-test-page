@@ -1,6 +1,10 @@
 @import url("http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+html {
+  height: 100%;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -23,14 +27,24 @@ header .logo .img-responsive {
 }
 
 body {
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
   margin-top: 123px;
+  background: #f1f1f1;
 }
 
 .content {
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; 
+}
+
+.content #leftContent {
+  padding-left:;
+}
+
+.content #rightContent {
+  padding-right:;
 }
 
 .navbar {
@@ -46,10 +60,28 @@ body {
 }
 
 .nav.navbar-nav.navbar-right .navbar-current {
-  text-decoration: underline;
+  border-bottom: 5px solid white;
+  padding-bottom: 10px;
 }
 
 .nav.navbar-nav.navbar-right .navbar-disabled {
   pointer-events: none;
   cursor: default;
+}
+
+.sidebar {
+  height:100%;
+  background: #d9d9d9;
+}
+
+#rightContent {
+  height:100%;
+}
+
+.fullcontainer {
+  height:100%;
+}
+
+.rowcontainer {
+  height:100%;
 }
