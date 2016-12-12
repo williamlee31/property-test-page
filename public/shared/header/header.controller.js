@@ -5,6 +5,5 @@ export default class HeaderController {
 
     this.navbarIndex = this.NavigationService.navbarIndex;
     this.currentIndex = this.NavigationService.currentIndex;
-    console.log(this.navbarIndex);
   }
 }

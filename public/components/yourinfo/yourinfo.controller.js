@@ -13,10 +13,6 @@ export default class YourInfoController {
     this.NavigationService.setCurrentIndex(0);
   }
 
-  changeName() {
-    this.name = 'Second';
-  }
-
   saveInfo() {
     this.InformationService.saveInformation(this.customer.name);
     this.$state.go('PropertyInfo');

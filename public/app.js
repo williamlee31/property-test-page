@@ -10,10 +10,14 @@ import services from './services/services.module';
 
 import yourinfo from './components/yourinfo/yourinfo.module';
 import propertyinfo from './components/propertyinfo/propertyinfo.module';
+import discountsinfo from './components/discountsinfo/discountsinfo.module';
+import quoteinfo from './components/quoteinfo/quoteinfo.module';
+
+
 import header from './shared/header/header.module';
 import sidebar from './shared/sidebar/sidebar.module';
 
-angular.module('PropertyTest', [uiRouter, ngAnimate, services, yourinfo, propertyinfo, header, sidebar])
+angular.module('PropertyTest', [uiRouter, ngAnimate, services, yourinfo, propertyinfo, discountsinfo, quoteinfo, header, sidebar])
   .config(routing)
   .run(['$templateCache', function($templateCache) {
     $templateCache.put('header.html', require('./shared/header/header.html'));

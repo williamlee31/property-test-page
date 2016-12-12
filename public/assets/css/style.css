@@ -39,24 +39,16 @@ body {
   margin-right: auto; 
 }
 
-.content #leftContent {
-  padding-left:;
-}
-
-.content #rightContent {
-  padding-right:;
-}
-
 .navbar {
   background: #003087;
 }
 
 .nav.navbar-nav.navbar-right li a {
-  color:#748bbb;
+  color: #748bbb;
 }
 
 .nav.navbar-nav.navbar-right .navbar-visted {
-  color:white;
+  color: white;
 }
 
 .nav.navbar-nav.navbar-right .navbar-current {
@@ -70,18 +62,6 @@ body {
 }
 
 .sidebar {
-  height:100%;
+  height: 100%;
   background: #d9d9d9;
-}
-
-#rightContent {
-  height:100%;
-}
-
-.fullcontainer {
-  height:100%;
-}
-
-.rowcontainer {
-  height:100%;
 }

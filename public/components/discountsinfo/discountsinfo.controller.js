@@ -1,4 +1,4 @@
-export default class PropertyInfoController {
+export default class DiscountsInfoController {
   constructor($state, InformationService, NavigationService) {
     'ngInject';
     this.$state = $state;
@@ -7,12 +7,12 @@ export default class PropertyInfoController {
 
     this.name = this.InformationService.currentCustomer.name;
 
-    this.NavigationService.navbarIndex.property = true;
-    this.NavigationService.setCurrentIndex(1);
+    this.NavigationService.navbarIndex.discounts = true;
+    this.NavigationService.setCurrentIndex(2);
   }
 
   changeName() {
     this.name = 'Fourth';
-    this.$state.go('DiscountsInfo');
+    this.$state.go('QuoteInfo');
   }
 }

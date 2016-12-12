@@ -1,7 +1,7 @@
 <div ng-include="'header.html'"></div>
 
-<div class="container fullcontainer">
-  <div class="row rowconatiner">
+<div class="container">
+  <div class="row">
     <div class="col-md-8 clearfix" id="leftContent">
       <div class="jumbotron">
         <h1>{{yourinfo.customer.name}}</h1>
@@ -9,15 +9,17 @@
 
       <form ng-submit="yourinfo.saveInfo()">
 
-        <div class="col-md-6 col-sm-12 content">
+        <div class="col-md-6 col-sm-12">
           <input type="text" placeholder="First name" ng-model="yourinfo.customer.firstName">
           <input type="text" placeholder="Last name" ng-model="yourinfo.customer.lastName">
-          
         </div>
 
-        <div class="col-md-6 col-sm-12 content">
-          <input type="text" placeholder="Name" ng-model="yourinfo.customer.name">
-          <input type="text" placeholder="Name" ng-model="yourinfo.customer.name">
+        <div class="col-md-6 col-sm-12">
+          <input type="text" placeholder="Residential Address" ng-model="yourinfo.customer.address">
+          <input type="text" placeholder="Apartment # (optional)" ng-model="yourinfo.customer.apartmentno">
+          <input type="text" placeholder="City" ng-model="yourinfo.customer.city">
+          <input type="text" placeholder="State" ng-model="yourinfo.customer.state">
+          <input type="text" placeholder="Zip Code" ng-model="yourinfo.customer.zipcode">
         </div>
 
 
